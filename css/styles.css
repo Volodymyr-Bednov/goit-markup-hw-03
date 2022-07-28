@@ -17,16 +17,35 @@
 
   --background-filter-btn: #f5f4fa;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   background: var(--primary-backgraund);
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
 .no-decor {
   text-decoration: none;
 }
+
 .list {
   list-style: none;
 }
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -39,7 +58,24 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid orange;
+}
+
 /* ----------------- HEADER ----------------- */
+.page-header {
+  border-bottom: 5px solid #ececec;
+}
+
+.page-header .container {
+  display: flex;
+  align-items: center;
+}
 .logo-link {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -49,9 +85,22 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
+.page-header .logo-link {
+  margin-right: 92px;
+}
 
 .logo-header {
   color: var(--header-logo-color);
+}
+
+.nav-links {
+  display: flex;
+  column-gap: 50px;
+}
+.nav-contacts {
+  display: flex;
+  column-gap: 50px;
+  margin-left: auto;
 }
 
 .link-item {
@@ -76,6 +125,7 @@ body {
 }
 /* ----------------- MAIN ----------------- */
 .hero {
+  margin-bottom: 94px;
   background: var(--secondary-background);
 }
 
@@ -102,6 +152,11 @@ body {
 }
 
 /*  */
+.skills-list {
+  display: flex;
+
+  margin-bottom: 94px;
+}
 .skill-list-header {
   font-weight: 700;
   font-size: 14px;
@@ -112,6 +167,7 @@ body {
 }
 
 .skill-list-text {
+  max-width: 270px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
